@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>CGPA Calculator</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/Sanchez/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Misans/stylesheet.css">
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="level-nav-block">
+        <!-- <select name="level-nav" id="level-nav" class="level-nav">
+          <option value="100">100 level</option>
+          <option value="200">200 level</option>
+          <option value="300">300 level</option>
+          <option value="400">400 level</option>
+        </select>
+
+        <select name="course-option-nav" id="course-option-nav" class="course-option-nav">
+          <option value="Animal Physiology">Animal Physiology</option>
+          <option value="Entomology">Entomology</option>
+          <option value="Parasitology">Parasitology</option>
+          <option value="Hydrobiology">Hydrobiology</option>
+        </select> -->
+      </div>
+
+      <div class="calculator">
+        <!-- <div class="modal">
+          <div class="card">
+            <div class="close-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg>
+            </div>
+            <div class="nav-level">
+              <a href="#" class="fw-bold active">100 Level</a>
+              <a href="#" class="fw-bold">200 Level</a>
+              <a href="#" class="fw-bold">300 Level</a>
+            </div>
+            <div class="prev-courses">
+              <label class="prev-course-deet">
+                <input type="checkbox" name="GES 100">
+                <span class="code">GES 100</span>
+                <span class="credit">3</span>
+              </label>
+              <label class="prev-course-deet">
+                <input type="checkbox" name="GES 100">
+                <span class="code">GES 100</span>
+                <span class="credit">3</span>
+              </label>
+              <label class="prev-course-deet">
+                <input type="checkbox" name="GES 100">
+                <span class="code">GES 100</span>
+                <span class="credit">3</span>
+              </label>
+              <label class="prev-course-deet">
+                <input type="checkbox" name="GES 100">
+                <span class="code">GES 100</span>
+                <span class="credit">3</span>
+              </label>
+            </div>
+            <div class="cta-block">
+              <a href="#" class="cta-btn">Confirm</a>
+            </div>
+          </div>
+        </div> -->
+        
+        <!-- <div class="score fw-bold fz-large">
+          <div class="tell-cgpa">C.G.P.A</div>
+          0.00
+        </div> -->
+
+        <!-- <div class="show-semesters">
+        <div class="semester first-semester">
+          <div class="heading">
+            <div class="flex semester-info">
+              <div class="fw-bold semester-title">First Semester</div>
+              <button class="add-course">Add</button>
+            </div>
+            <div class="highlights">
+              <div class="fw-bold h-courses">Courses<span class="h-totals h-t_courses">1</span></div>
+              <div class="fw-bold h-grades">Grades</div>
+              <div class="fw-bold h-credits">Credits<span class="h-totals h-t_credits">3</span></div>
+              <div class="fw-bold h-points">Points<span class="h-totals h-t_qps">0</span></div>
+            </div>
+          </div>
+      
+          <div class="courses">
+            <div class="course-deet">
+              <div class="course">CHM 132</div>
+              <div class="input-grade">
+                <input type="text" name="grade" id="grade" maxlength="1" class="fw-bold" />
+              </div>
+              <div class="credit-unit">3</div>
+              <div class="qp">0</div>
+              <div class="waive">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cd5c5c" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path></svg>
+              </div>
+            </div>
+          </div>
+      
+          <div class="totals">
+            <div class="total-courses">4</div>
+            <div class="total-credits">12</div>
+            <div class="total-qps">0</div>
+          </div>
+        </div>
+      
+        <div class="semester second-semester">
+          <div class="heading">
+            <div class="flex semester-info">
+              <div class="fw-bold semester-title">Second Semester</div>
+              <button class="add-course">Add</button>
+            </div>
+            <div class="highlights">
+              <div class="fw-bold">Courses</div>
+              <div class="fw-bold">Grades</div>
+              <div class="fw-bold">Credits</div>
+              <div class="fw-bold">Points</div>
+            </div>
+          </div>
+      
+          <div class="courses">
+            <div class="course-deet">
+              <div class="course">GES 100</div>
+              <div class="input-grade">
+                <input type="text" name="grade" id="grade" maxlength="1" class="fw-bold" />
+              </div>
+              <div class="credit-unit">3</div>
+              <div class="qp">0</div>
+              <div class="waive">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cd5c5c" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path></svg>
+              </div>
+            </div>
+          </div>
+      
+          <div class="totals">
+            <div class="total-courses">4</div>
+            <div class="total-credits">12</div>
+            <div class="total-qps">0</div>
+          </div>
+        </div>
+      </div> -->
+      </div>
+    </div>
+  </body>
+
+  <script type="module" src="model/data.js"></script>
+  <script type="module" src="model/logic.js"></script>
+  <script type="module" src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</html>
